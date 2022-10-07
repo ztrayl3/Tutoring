@@ -1,0 +1,2521 @@
+{
+    "Markers": [
+        {
+            "endDatetime": "2022-10-04T09:44:56.988691-04:00",
+            "extras": {
+                "type_info": "setup"
+            },
+            "index": 1,
+            "label": "published_date",
+            "originalEndDatetime": "2022-10-04T09:44:56.989000-04:00",
+            "originalStartDatetime": "2022-10-04T09:44:56.989000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:44:56.988691-04:00",
+            "type": "instance",
+            "uuid": "e5107a2b-013c-400c-ad6a-89eac83de773",
+            "value": "2022-09-30T20:32:20.653884Z",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:45:02.723369-04:00",
+            "extras": {
+                "value_info": "true"
+            },
+            "index": 2,
+            "label": "sensor_check",
+            "originalEndDatetime": "2022-10-04T09:45:02.720000-04:00",
+            "originalStartDatetime": "2022-10-04T09:44:56.990000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:44:56.988691-04:00",
+            "type": "interval",
+            "uuid": "402f4dcb-d238-44d7-bf08-be95e8af6647",
+            "value": "true",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:45:04.231262-04:00",
+            "extras": {
+                "value_info": "true"
+            },
+            "index": 3,
+            "label": "sound_check",
+            "originalEndDatetime": "2022-10-04T09:45:04.234000-04:00",
+            "originalStartDatetime": "2022-10-04T09:45:02.757000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:45:02.754621-04:00",
+            "type": "interval",
+            "uuid": "cac74fe1-4643-43dd-92c6-170c82ffe3ab",
+            "value": "true",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:46:22.969796-04:00",
+            "extras": {
+            },
+            "index": 4,
+            "label": "phase_Calibration phase 1",
+            "originalEndDatetime": "2022-10-04T09:46:22.968000-04:00",
+            "originalStartDatetime": "2022-10-04T09:45:04.237000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:45:04.239075-04:00",
+            "type": "interval",
+            "uuid": "a6162b3b-290d-44bf-83ab-3cf1caa0cf06",
+            "value": 34042,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:45:47.077275-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210330,
+                    "element_name": "eyesopen_element_tcsg",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34042,
+                    "phase_name": "Calibration phase 1"
+                },
+                "type_info": "element"
+            },
+            "index": 5,
+            "label": "eyesopen_element_tcsg",
+            "originalEndDatetime": "2022-10-04T09:45:47.076000-04:00",
+            "originalStartDatetime": "2022-10-04T09:45:32.076000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:45:32.076483-04:00",
+            "type": "interval",
+            "uuid": "ad24aa42-2472-41b0-a427-9512d14b2df2",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:46:19.313353-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210331,
+                    "element_name": "eyesclose_element_vy1k",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34042,
+                    "phase_name": "Calibration phase 1"
+                },
+                "type_info": "element"
+            },
+            "index": 6,
+            "label": "eyesclose_element_vy1k",
+            "originalEndDatetime": "2022-10-04T09:46:19.314000-04:00",
+            "originalStartDatetime": "2022-10-04T09:46:04.314000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:46:04.312561-04:00",
+            "type": "interval",
+            "uuid": "e8c99be7-5d48-4286-abf7-cd147310d075",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:47:25.269963-04:00",
+            "extras": {
+            },
+            "index": 7,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:47:25.271000-04:00",
+            "originalStartDatetime": "2022-10-04T09:46:22.986000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:46:22.985422-04:00",
+            "type": "interval",
+            "uuid": "d24129b2-fdb9-499e-bf50-5409b364bd1e",
+            "value": 34051,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:47:00.565533-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210360,
+                    "element_name": "video_element_v14",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34051,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 8,
+            "label": "video_element_v14",
+            "originalEndDatetime": "2022-10-04T09:47:00.568000-04:00",
+            "originalStartDatetime": "2022-10-04T09:46:23.100000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:46:23.102616-04:00",
+            "type": "interval",
+            "uuid": "eb436e31-0c15-4cb2-9371-4f263c4c0c2a",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:22.074929-04:00",
+            "extras": {
+            },
+            "index": 9,
+            "label": "active_period",
+            "originalEndDatetime": "2022-10-04T09:57:22.076000-04:00",
+            "originalStartDatetime": "2022-10-04T09:46:23.100000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:46:23.102616-04:00",
+            "type": "interval",
+            "uuid": "49100b20-9fb3-41b0-8175-bc8596e27c5b",
+            "value": "active_period",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:47:13.105257-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:47:06.546000-04:00",
+                        "start_time": "2022-10-04T09:47:06.546000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210357,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34051,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 10,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:47:13.109000-04:00",
+            "originalStartDatetime": "2022-10-04T09:47:00.574000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:47:00.573345-04:00",
+            "type": "interval",
+            "uuid": "b65972fe-ab10-45d3-83e8-2b7c49b62b87",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:47:19.925930-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:47:17.552000-04:00",
+                        "start_time": "2022-10-04T09:47:17.552000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210358,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34051,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 11,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:47:19.926000-04:00",
+            "originalStartDatetime": "2022-10-04T09:47:13.114000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:47:13.113070-04:00",
+            "type": "interval",
+            "uuid": "e993966a-72df-4233-a1f4-58d335f8f5b7",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:47:25.269963-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:47:22.344000-04:00",
+                        "start_time": "2022-10-04T09:47:22.344000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210359,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34051,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 12,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:47:25.271000-04:00",
+            "originalStartDatetime": "2022-10-04T09:47:19.932000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:47:19.933743-04:00",
+            "type": "interval",
+            "uuid": "a6e4b8a6-ec40-4f7a-ad6a-8d169df0b5bd",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:25.421578-04:00",
+            "extras": {
+            },
+            "index": 13,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:48:25.418000-04:00",
+            "originalStartDatetime": "2022-10-04T09:47:25.284000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:47:25.285588-04:00",
+            "type": "interval",
+            "uuid": "2b233fad-96dd-48e8-a7e4-ff4d870192e4",
+            "value": 34052,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:04.490785-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210364,
+                    "element_name": "video_element_v15",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34052,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 14,
+            "label": "video_element_v15",
+            "originalEndDatetime": "2022-10-04T09:48:04.494000-04:00",
+            "originalStartDatetime": "2022-10-04T09:47:25.383000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:47:25.379343-04:00",
+            "type": "interval",
+            "uuid": "859069b1-ce04-4e34-986b-e155760c3557",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:09.123842-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:07.990000-04:00",
+                        "start_time": "2022-10-04T09:48:07.990000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210361,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34052,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 15,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:48:09.122000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:04.502000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:04.498598-04:00",
+            "type": "interval",
+            "uuid": "3572ca31-8419-4173-af80-9b208d2dea9c",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:20.241617-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:11.144000-04:00",
+                        "start_time": "2022-10-04T09:48:11.144000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:11.832000-04:00",
+                        "start_time": "2022-10-04T09:48:11.832000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:16.046000-04:00",
+                        "start_time": "2022-10-04T09:48:16.046000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210362,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34052,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 16,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:48:20.239000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:09.129000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:09.131655-04:00",
+            "type": "interval",
+            "uuid": "ed2c85c3-e678-4154-8bc3-6997dfcaa7c3",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:25.421578-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:22.585000-04:00",
+                        "start_time": "2022-10-04T09:48:22.585000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:24.119000-04:00",
+                        "start_time": "2022-10-04T09:48:24.119000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210363,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34052,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 17,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:48:25.418000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:20.246000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:20.249430-04:00",
+            "type": "interval",
+            "uuid": "db01a829-612e-46e4-b38b-a578cd45e562",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:49:15.236709-04:00",
+            "extras": {
+            },
+            "index": 18,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:49:15.236000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:25.432000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:25.429391-04:00",
+            "type": "interval",
+            "uuid": "afff2b1f-2bfc-4d85-8d95-fc595d16dff9",
+            "value": 34055,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:48:55.962254-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210376,
+                    "element_name": "video_element_v18",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34055,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 19,
+            "label": "video_element_v18",
+            "originalEndDatetime": "2022-10-04T09:48:55.960000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:25.537000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:25.538772-04:00",
+            "type": "interval",
+            "uuid": "8c7b6576-fac7-4089-ba0c-ea82526ad295",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:49:01.439106-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:48:59.237000-04:00",
+                        "start_time": "2022-10-04T09:48:59.237000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210373,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34055,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 20,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:49:01.438000-04:00",
+            "originalStartDatetime": "2022-10-04T09:48:55.969000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:48:55.970067-04:00",
+            "type": "interval",
+            "uuid": "fd636cfb-f51c-4b06-90b6-c78efc1fbb75",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:49:07.322229-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:49:05.080000-04:00",
+                        "start_time": "2022-10-04T09:49:05.080000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210374,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34055,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 21,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:49:07.319000-04:00",
+            "originalStartDatetime": "2022-10-04T09:49:01.446000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:49:01.446919-04:00",
+            "type": "interval",
+            "uuid": "99358f5f-91cc-4c52-96c2-2f010c0004eb",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:49:15.236709-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:49:09.263000-04:00",
+                        "start_time": "2022-10-04T09:49:09.263000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210375,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34055,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 22,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:49:15.236000-04:00",
+            "originalStartDatetime": "2022-10-04T09:49:07.327000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:49:07.330042-04:00",
+            "type": "interval",
+            "uuid": "e361ee7d-2369-4856-8cc2-7c08357afcce",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:50:44.475799-04:00",
+            "extras": {
+            },
+            "index": 23,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:50:44.475000-04:00",
+            "originalStartDatetime": "2022-10-04T09:49:15.251000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:49:15.252335-04:00",
+            "type": "interval",
+            "uuid": "cde9ab22-8331-4539-aeed-fce3307667f6",
+            "value": 34060,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:50:32.389223-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210393,
+                    "element_name": "video_element_v19",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34060,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 24,
+            "label": "video_element_v19",
+            "originalEndDatetime": "2022-10-04T09:50:32.387000-04:00",
+            "originalStartDatetime": "2022-10-04T09:49:15.291000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:49:15.291400-04:00",
+            "type": "interval",
+            "uuid": "5c011d04-2f00-4fb1-88bd-135227c2b84b",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:50:37.319171-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:50:35.870000-04:00",
+                        "start_time": "2022-10-04T09:50:35.870000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210390,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34060,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 25,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:50:37.319000-04:00",
+            "originalStartDatetime": "2022-10-04T09:50:32.399000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:50:32.397036-04:00",
+            "type": "interval",
+            "uuid": "f74c48f2-6c62-4985-bd83-00eb03bc565c",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:50:41.131872-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:50:39.633000-04:00",
+                        "start_time": "2022-10-04T09:50:39.633000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210391,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34060,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 26,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:50:41.130000-04:00",
+            "originalStartDatetime": "2022-10-04T09:50:37.329000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:50:37.326984-04:00",
+            "type": "interval",
+            "uuid": "4ccba394-927c-4026-969d-a183d28318ea",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:50:44.475799-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:50:43.121000-04:00",
+                        "start_time": "2022-10-04T09:50:43.121000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210392,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34060,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 27,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:50:44.475000-04:00",
+            "originalStartDatetime": "2022-10-04T09:50:41.141000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:50:41.139685-04:00",
+            "type": "interval",
+            "uuid": "93d5364a-ccdb-4c44-a0fc-64da1a675b79",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:51:39.775595-04:00",
+            "extras": {
+            },
+            "index": 28,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:51:39.773000-04:00",
+            "originalStartDatetime": "2022-10-04T09:50:44.494000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:50:44.491425-04:00",
+            "type": "interval",
+            "uuid": "8e10b6b5-b800-4d05-a4b3-6752e7ee5be0",
+            "value": 34049,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:51:23.485672-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210352,
+                    "element_name": "video_element_v12",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34049,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 29,
+            "label": "video_element_v12",
+            "originalEndDatetime": "2022-10-04T09:51:23.486000-04:00",
+            "originalStartDatetime": "2022-10-04T09:50:44.545000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:50:44.546115-04:00",
+            "type": "interval",
+            "uuid": "400dd0b8-83b9-4d40-9922-a33c7c04dee8",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:51:27.017109-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:25.831000-04:00",
+                        "start_time": "2022-10-04T09:51:25.831000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210349,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34049,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 30,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:51:27.019000-04:00",
+            "originalStartDatetime": "2022-10-04T09:51:23.499000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:51:23.501298-04:00",
+            "type": "interval",
+            "uuid": "71ceef8a-40c7-443d-b7a0-270f8758ced7",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:51:34.681576-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:28.637000-04:00",
+                        "start_time": "2022-10-04T09:51:28.637000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:29.191000-04:00",
+                        "start_time": "2022-10-04T09:51:29.191000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:30.203000-04:00",
+                        "start_time": "2022-10-04T09:51:30.203000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:33.596000-04:00",
+                        "start_time": "2022-10-04T09:51:33.596000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210350,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34049,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 31,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:51:34.680000-04:00",
+            "originalStartDatetime": "2022-10-04T09:51:27.030000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:51:27.032735-04:00",
+            "type": "interval",
+            "uuid": "e90f1327-5d32-48b6-b87b-77098f93ec95",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:51:39.775595-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:51:38.062000-04:00",
+                        "start_time": "2022-10-04T09:51:38.062000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210351,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34049,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 32,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:51:39.773000-04:00",
+            "originalStartDatetime": "2022-10-04T09:51:34.693000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:51:34.689389-04:00",
+            "type": "interval",
+            "uuid": "f102e214-96a7-4c3e-856f-b8c1ed3d80da",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:52:29.879805-04:00",
+            "extras": {
+            },
+            "index": 33,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:52:29.882000-04:00",
+            "originalStartDatetime": "2022-10-04T09:51:39.790000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:51:39.791221-04:00",
+            "type": "interval",
+            "uuid": "38ec194d-d751-4d9f-bd51-9b3d22bd2712",
+            "value": 34053,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:52:16.027511-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210368,
+                    "element_name": "video_element_v16",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34053,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 34,
+            "label": "video_element_v16",
+            "originalEndDatetime": "2022-10-04T09:52:16.027000-04:00",
+            "originalStartDatetime": "2022-10-04T09:51:39.966000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:51:39.963105-04:00",
+            "type": "interval",
+            "uuid": "8164fe57-27d4-462e-9f50-de7c56e3b62f",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:52:22.395034-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:18.903000-04:00",
+                        "start_time": "2022-10-04T09:52:18.903000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:20.359000-04:00",
+                        "start_time": "2022-10-04T09:52:20.359000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210365,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34053,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 35,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:52:22.393000-04:00",
+            "originalStartDatetime": "2022-10-04T09:52:16.041000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:52:16.043136-04:00",
+            "type": "interval",
+            "uuid": "75514316-4ef9-4d21-85c1-e34c452d9e94",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:52:26.785891-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:24.391000-04:00",
+                        "start_time": "2022-10-04T09:52:24.391000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:25.292000-04:00",
+                        "start_time": "2022-10-04T09:52:25.292000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210366,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34053,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 36,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:52:26.782000-04:00",
+            "originalStartDatetime": "2022-10-04T09:52:22.405000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:52:22.402847-04:00",
+            "type": "interval",
+            "uuid": "0e183d5f-114a-40fb-b0c4-6fb8a0c7d64a",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:52:29.879805-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:27.957000-04:00",
+                        "start_time": "2022-10-04T09:52:27.957000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:52:28.352000-04:00",
+                        "start_time": "2022-10-04T09:52:28.352000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210367,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34053,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 37,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:52:29.881000-04:00",
+            "originalStartDatetime": "2022-10-04T09:52:26.794000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:52:26.793704-04:00",
+            "type": "interval",
+            "uuid": "9168e2fe-9c73-445a-b40d-8df6e8a7616e",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:53:43.500882-04:00",
+            "extras": {
+            },
+            "index": 38,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:53:43.500000-04:00",
+            "originalStartDatetime": "2022-10-04T09:52:29.902000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:52:29.903244-04:00",
+            "type": "interval",
+            "uuid": "c4094994-5556-40c9-a739-b73f4f8ba588",
+            "value": 34059,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:53:23.281063-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210389,
+                    "element_name": "video_element_v21",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34059,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 39,
+            "label": "video_element_v21",
+            "originalEndDatetime": "2022-10-04T09:53:23.282000-04:00",
+            "originalStartDatetime": "2022-10-04T09:52:29.944000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:52:29.942308-04:00",
+            "type": "interval",
+            "uuid": "4a496ff9-4e2b-4d40-bf88-a1a749f021d9",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:53:35.781724-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:53:32.252000-04:00",
+                        "start_time": "2022-10-04T09:53:32.252000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210386,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34059,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 40,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:53:35.782000-04:00",
+            "originalStartDatetime": "2022-10-04T09:53:23.297000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:53:23.296689-04:00",
+            "type": "interval",
+            "uuid": "4e2268f2-1c5f-420f-b4a5-351c3eca1ebd",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:53:38.945953-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:53:37.985000-04:00",
+                        "start_time": "2022-10-04T09:53:37.985000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210387,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34059,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 41,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:53:38.944000-04:00",
+            "originalStartDatetime": "2022-10-04T09:53:35.796000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:53:35.797350-04:00",
+            "type": "interval",
+            "uuid": "c6200ee8-f5dc-41fc-b4a6-9175ef57e928",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:53:43.500882-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:53:40.872000-04:00",
+                        "start_time": "2022-10-04T09:53:40.872000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210388,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34059,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 42,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:53:43.500000-04:00",
+            "originalStartDatetime": "2022-10-04T09:53:38.959000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:53:38.961579-04:00",
+            "type": "interval",
+            "uuid": "2fb106c6-b951-448d-9678-863582fb59c6",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:54:34.402008-04:00",
+            "extras": {
+            },
+            "index": 43,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:54:34.400000-04:00",
+            "originalStartDatetime": "2022-10-04T09:53:43.521000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:53:43.524320-04:00",
+            "type": "interval",
+            "uuid": "49ed471c-44b3-479b-ab49-7562aec2d4fd",
+            "value": 34047,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:54:18.588673-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210344,
+                    "element_name": "video_element_v11",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34047,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 44,
+            "label": "video_element_v11",
+            "originalEndDatetime": "2022-10-04T09:54:18.586000-04:00",
+            "originalStartDatetime": "2022-10-04T09:53:43.686000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:53:43.688392-04:00",
+            "type": "interval",
+            "uuid": "41eb2832-5980-4d60-82f0-7e6146f7cc55",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:54:23.456118-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:20.724000-04:00",
+                        "start_time": "2022-10-04T09:54:20.724000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210341,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34047,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 45,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:54:23.455000-04:00",
+            "originalStartDatetime": "2022-10-04T09:54:18.603000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:54:18.604299-04:00",
+            "type": "interval",
+            "uuid": "4c2e00b8-9c0f-40be-bd66-ff8d947b0631",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:54:29.698635-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:25.390000-04:00",
+                        "start_time": "2022-10-04T09:54:25.390000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:27.224000-04:00",
+                        "start_time": "2022-10-04T09:54:27.224000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:27.825000-04:00",
+                        "start_time": "2022-10-04T09:54:27.825000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:28.625000-04:00",
+                        "start_time": "2022-10-04T09:54:28.625000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210342,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34047,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 46,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:54:29.695000-04:00",
+            "originalStartDatetime": "2022-10-04T09:54:23.470000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:54:23.471743-04:00",
+            "type": "interval",
+            "uuid": "71b7300d-c122-4152-a837-360b83e271c2",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:54:34.402008-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:54:31.171000-04:00",
+                        "start_time": "2022-10-04T09:54:31.171000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210343,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34047,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 47,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:54:34.400000-04:00",
+            "originalStartDatetime": "2022-10-04T09:54:29.711000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:54:29.714261-04:00",
+            "type": "interval",
+            "uuid": "8ff23844-fe85-43ae-99ee-2df7add73b46",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:55:32.873847-04:00",
+            "extras": {
+            },
+            "index": 48,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:55:32.876000-04:00",
+            "originalStartDatetime": "2022-10-04T09:54:34.421000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:54:34.417634-04:00",
+            "type": "interval",
+            "uuid": "477d1b19-7ae7-454e-b4ff-0be5aa6f2fe6",
+            "value": 34050,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:55:13.411882-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210356,
+                    "element_name": "video_element_v13",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34050,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 49,
+            "label": "video_element_v13",
+            "originalEndDatetime": "2022-10-04T09:55:13.413000-04:00",
+            "originalStartDatetime": "2022-10-04T09:54:34.465000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:54:34.464512-04:00",
+            "type": "interval",
+            "uuid": "39140855-278a-4768-bf7d-0c84c8156751",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:55:18.013687-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:16.676000-04:00",
+                        "start_time": "2022-10-04T09:55:16.676000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210353,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34050,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 50,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:55:18.015000-04:00",
+            "originalStartDatetime": "2022-10-04T09:55:13.431000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:55:13.427508-04:00",
+            "type": "interval",
+            "uuid": "e5bd5feb-1b85-4f4f-9437-9c07fb926252",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:55:20.927904-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:19.381000-04:00",
+                        "start_time": "2022-10-04T09:55:19.381000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:19.902000-04:00",
+                        "start_time": "2022-10-04T09:55:19.902000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210354,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34050,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 51,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:55:20.925000-04:00",
+            "originalStartDatetime": "2022-10-04T09:55:18.032000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:55:18.029313-04:00",
+            "type": "interval",
+            "uuid": "c37ae702-ecd2-4fa0-a436-97bb75f742a4",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:55:32.873847-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:22.583000-04:00",
+                        "start_time": "2022-10-04T09:55:22.583000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:23.453000-04:00",
+                        "start_time": "2022-10-04T09:55:23.453000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:24.246000-04:00",
+                        "start_time": "2022-10-04T09:55:24.246000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:25.977000-04:00",
+                        "start_time": "2022-10-04T09:55:25.977000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:28.096000-04:00",
+                        "start_time": "2022-10-04T09:55:28.096000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:55:31.425000-04:00",
+                        "start_time": "2022-10-04T09:55:31.425000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210355,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34050,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 52,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:55:32.875000-04:00",
+            "originalStartDatetime": "2022-10-04T09:55:20.942000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:55:20.943529-04:00",
+            "type": "interval",
+            "uuid": "bd32f225-cd96-45d0-83d2-62bb35e66844",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:56:41.307150-04:00",
+            "extras": {
+            },
+            "index": 53,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:56:41.310000-04:00",
+            "originalStartDatetime": "2022-10-04T09:55:32.899000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:55:32.897286-04:00",
+            "type": "interval",
+            "uuid": "e82ab266-2093-4db1-895d-0fca30fff556",
+            "value": 34054,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:56:28.197082-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210372,
+                    "element_name": "video_element_v17",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34054,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 54,
+            "label": "video_element_v17",
+            "originalEndDatetime": "2022-10-04T09:56:28.200000-04:00",
+            "originalStartDatetime": "2022-10-04T09:55:32.939000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:55:32.936351-04:00",
+            "type": "interval",
+            "uuid": "5e4cbe31-0789-4d64-8c1e-ecafac95fc23",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:56:31.556635-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:30.661000-04:00",
+                        "start_time": "2022-10-04T09:56:30.661000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210369,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34054,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 55,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:56:31.559000-04:00",
+            "originalStartDatetime": "2022-10-04T09:56:28.220000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:56:28.220521-04:00",
+            "type": "interval",
+            "uuid": "040c2378-b7ee-4c2b-8132-4eb9f711daaa",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:56:35.642788-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:32.219000-04:00",
+                        "start_time": "2022-10-04T09:56:32.219000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:33.090000-04:00",
+                        "start_time": "2022-10-04T09:56:33.090000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:33.588000-04:00",
+                        "start_time": "2022-10-04T09:56:33.588000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:33.975000-04:00",
+                        "start_time": "2022-10-04T09:56:33.975000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210370,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34054,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 56,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:56:35.639000-04:00",
+            "originalStartDatetime": "2022-10-04T09:56:31.579000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:56:31.580074-04:00",
+            "type": "interval",
+            "uuid": "7248cfda-eb28-41b9-a34f-06295ee0a58f",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:56:41.307150-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:37.795000-04:00",
+                        "start_time": "2022-10-04T09:56:37.795000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:38.594000-04:00",
+                        "start_time": "2022-10-04T09:56:38.594000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:40.065000-04:00",
+                        "start_time": "2022-10-04T09:56:40.065000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:56:40.453000-04:00",
+                        "start_time": "2022-10-04T09:56:40.453000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210371,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34054,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 57,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:56:41.310000-04:00",
+            "originalStartDatetime": "2022-10-04T09:56:35.658000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:56:35.658414-04:00",
+            "type": "interval",
+            "uuid": "08034a65-ddf9-4d96-8e38-edf9c65ae11b",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:25.637617-04:00",
+            "extras": {
+            },
+            "index": 58,
+            "label": "phase_Video + valence + arousal+ dominance",
+            "originalEndDatetime": "2022-10-04T09:57:25.641000-04:00",
+            "originalStartDatetime": "2022-10-04T09:56:41.336000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:56:41.338402-04:00",
+            "type": "interval",
+            "uuid": "913d29ef-6c5a-4a84-8239-a60ea06a1158",
+            "value": 34058,
+            "value_type": "number"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:12.918195-04:00",
+            "extras": {
+                "action_info": [
+                ],
+                "label_info": {
+                    "element_id": 210385,
+                    "element_name": "video_element_v20",
+                    "loop_id": 1,
+                    "order_position": 0,
+                    "phase_id": 34058,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 59,
+            "label": "video_element_v20",
+            "originalEndDatetime": "2022-10-04T09:57:12.916000-04:00",
+            "originalStartDatetime": "2022-10-04T09:56:41.380000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:56:41.377466-04:00",
+            "type": "interval",
+            "uuid": "519a7b98-1434-42f1-98de-b51a1d6965f2",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:19.965442-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:15.507000-04:00",
+                        "start_time": "2022-10-04T09:57:15.507000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:16.629000-04:00",
+                        "start_time": "2022-10-04T09:57:16.629000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:17.800000-04:00",
+                        "start_time": "2022-10-04T09:57:17.800000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:18.733000-04:00",
+                        "start_time": "2022-10-04T09:57:18.733000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210382,
+                    "element_name": "question_element_valence",
+                    "loop_id": 1,
+                    "order_position": 1,
+                    "phase_id": 34058,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 60,
+            "label": "question_element_valence",
+            "originalEndDatetime": "2022-10-04T09:57:19.963000-04:00",
+            "originalStartDatetime": "2022-10-04T09:57:12.937000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:57:12.933821-04:00",
+            "type": "interval",
+            "uuid": "f8c80304-3af6-483f-aaa6-310f23396821",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:21.996800-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:21.067000-04:00",
+                        "start_time": "2022-10-04T09:57:21.067000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210383,
+                    "element_name": "question_element_arousal",
+                    "loop_id": 1,
+                    "order_position": 2,
+                    "phase_id": 34058,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 61,
+            "label": "question_element_arousal",
+            "originalEndDatetime": "2022-10-04T09:57:21.995000-04:00",
+            "originalStartDatetime": "2022-10-04T09:57:19.982000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:57:19.981068-04:00",
+            "type": "interval",
+            "uuid": "fb29c815-f1c9-4fad-928e-c4bea9587e27",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:25.637617-04:00",
+            "extras": {
+                "action_info": [
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:23.479000-04:00",
+                        "start_time": "2022-10-04T09:57:23.479000-04:00"
+                    },
+                    {
+                        "action_label": "mousedown",
+                        "action_type": "instance",
+                        "action_value": 0,
+                        "end_time": "2022-10-04T09:57:24.174000-04:00",
+                        "start_time": "2022-10-04T09:57:24.174000-04:00"
+                    }
+                ],
+                "label_info": {
+                    "element_id": 210384,
+                    "element_name": "question_element_dominance",
+                    "loop_id": 1,
+                    "order_position": 3,
+                    "phase_id": 34058,
+                    "phase_name": "Video + valence + arousal+ dominance"
+                },
+                "type_info": "element"
+            },
+            "index": 62,
+            "label": "question_element_dominance",
+            "originalEndDatetime": "2022-10-04T09:57:25.640000-04:00",
+            "originalStartDatetime": "2022-10-04T09:57:22.014000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:57:22.012426-04:00",
+            "type": "interval",
+            "uuid": "0060ddb7-807b-4738-9e70-47ee84d9b0b2",
+            "value": "NULL",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:25.645430-04:00",
+            "extras": {
+                "type_info": "setup"
+            },
+            "index": 63,
+            "label": "last_stimuli",
+            "originalEndDatetime": "2022-10-04T09:57:25.644000-04:00",
+            "originalStartDatetime": "2022-10-04T09:57:25.644000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:57:25.645430-04:00",
+            "type": "instance",
+            "uuid": "fb6d0d27-677e-44ca-b87d-9441cbfae8e5",
+            "value": "2022-10-04T09:57:22.076000-04:00",
+            "value_type": "string"
+        },
+        {
+            "endDatetime": "2022-10-04T09:57:25.653243-04:00",
+            "extras": {
+                "type_info": "setup"
+            },
+            "index": 64,
+            "label": "finish_running",
+            "originalEndDatetime": "2022-10-04T09:57:25.657000-04:00",
+            "originalStartDatetime": "2022-10-04T09:57:25.657000-04:00",
+            "port": "labs",
+            "startDatetime": "2022-10-04T09:57:25.653243-04:00",
+            "type": "instance",
+            "uuid": "40888d94-283f-4acc-adb9-241f008a92ff",
+            "value": "2022-10-04T09:57:25.657000-04:00",
+            "value_type": "string"
+        }
+    ],
+    "connectionType": "dongle",
+    "demographics": {
+        "birthday": "1900-01-01",
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "U"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2022-10-04T11:17:42.912-04:00",
+    "headsetType": "EPOCFLEX",
+    "mappings": {
+        "CMS": "TP9",
+        "DRL": "TP10",
+        "LA": "C3",
+        "LB": "T7",
+        "LC": "FC1",
+        "LD": "FC5",
+        "LE": "FT9",
+        "LF": "F3",
+        "LG": "F7",
+        "LH": "Fp1",
+        "LJ": "Pz",
+        "LK": "Cz",
+        "LL": "O1",
+        "LM": "PO9",
+        "LN": "P3",
+        "LO": "P7",
+        "LP": "CP1",
+        "LQ": "CP5",
+        "RA": "C4",
+        "RB": "T8",
+        "RC": "FC2",
+        "RD": "FC6",
+        "RE": "FT10",
+        "RF": "F4",
+        "RG": "F8",
+        "RH": "Fp2",
+        "RJ": "Oz",
+        "RK": "Fz",
+        "RL": "O2",
+        "RM": "PO10",
+        "RN": "P4",
+        "RO": "P8",
+        "RP": "CP2",
+        "RQ": "CP6"
+    },
+    "recordId": "abd98ff0-b069-4a3f-9504-8bc2cc66d15a",
+    "surveysResults": {
+        "survey": [
+            {
+                "answer_index": [
+                    "2"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "2"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210357,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "8"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "8"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210358,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "2"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "2"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210359,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "8"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "8"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210361,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210362,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "6"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "6"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210363,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "1"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "1"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210373,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "4"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "4"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210374,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "2"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "2"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210375,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210390,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "8"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "8"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210391,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "5"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "5"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210392,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "6"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "6"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210349,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "3"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "3"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210350,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "4"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "4"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210351,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "5"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "5"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210365,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "2"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "2"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210366,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "5"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "5"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210367,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "6"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "6"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210386,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210387,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "6"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "6"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210388,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "3"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "3"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210341,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210342,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "4"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "4"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210343,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "2"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "2"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210353,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "9"
+                ],
+                "answer_tag": [
+                    null
+                ],
+                "answer_text": [
+                    "9"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210354,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210355,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "7"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "7"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210369,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "4"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "4"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210370,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "4"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "4"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210371,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "6"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "6"
+                ],
+                "element_name": "question_element_valence",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210382,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How pleasant or positive did the video make you feel? "
+            },
+            {
+                "answer_index": [
+                    "5"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "5"
+                ],
+                "element_name": "question_element_arousal",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210383,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How engaged or stimulated did the video make you feel?"
+            },
+            {
+                "answer_index": [
+                    "5"
+                ],
+                "answer_tag": [
+                    ""
+                ],
+                "answer_text": [
+                    "5"
+                ],
+                "element_name": "question_element_dominance",
+                "experiment_name": "Emotional response to video stimulus #2",
+                "id": 210384,
+                "loop_id": 1,
+                "phase_name": "Video + valence + arousal+ dominance",
+                "question_label": "How encouraged or motivated did the video make you feel?"
+            }
+        ]
+    },
+    "user": "inmind"
+}
