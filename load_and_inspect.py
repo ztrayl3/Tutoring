@@ -1,5 +1,6 @@
 from mne.time_frequency import psd_welch
 import numpy as np
+import pickle
 import pandas
 import mne
 import os
@@ -8,7 +9,8 @@ figures = False
 N = 0  # number of subjects in the study
 chosen = []  # events of interest in the study
 all_epochs = []  # list to contain all epochs of interest
-study = "erp"  # emotion or erp study
+all_raws = []  # list to contain all raw files
+study = "emotion"  # emotion or erp study
 if study == "emotion":
     N = 4
     chosen = ["video_element_v11",
@@ -59,10 +61,12 @@ for subject in range(N):  # for each subject...
     raw.set_channel_types(dict(zip(raw.ch_names, new_types)))  # apply the new channel types
     raw.set_montage(montage, on_missing="ignore")  # apply the channel montage
 
-    if figures :
+    if figures:
         # inspect the EEG data visually
         raw.plot_psd(fmax=64)  # power at frequency
         raw.plot()  # event markers with "raw" EEG data
+
+    all_raws.append(raw)  # save the raw file
 
     #########################
     # EPOCHING THE EEG DATA #
@@ -91,6 +95,11 @@ for subject in range(N):  # for each subject...
     all_epochs.append(epochs[chosen])
 
 epochs_combined = mne.concatenate_epochs(all_epochs)  # join all epochs into one object
+
+# save all raw data to a file for later
+data = open(study + ".pkl", "wb")
+pickle.dump(all_raws, data)
+data.close()
 
 if study == "emotion":
     # visually inspect differences in frequency bands using a sliding window across all epochs
