@@ -18,7 +18,7 @@ for raw in all_raws:  # for every subject, we will begin pre-processing
     # Pre-Processing
     artifact_removal = raw.copy()
     artifact_removal.filter(l_freq=1.0, h_freq=None, n_jobs=-1)  # high-pass filter at 1Hz
-    artifact_removal.notch_filter(50.0, n_jobs=-1)  # notch filter at 50Hz
+    artifact_removal.notch_filter(60.0, n_jobs=-1)  # notch filter at 60Hz
 
     # ICA artifact removal
     ica = mne.preprocessing.ICA(n_components=0.95, random_state=97, max_iter="auto")
