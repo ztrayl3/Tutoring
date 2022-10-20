@@ -1,19 +1,7 @@
 import numpy as np
-import matplotlib.pyplot as plt
-
-from sklearn.pipeline import Pipeline
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.model_selection import ShuffleSplit, cross_val_score
-
-from mne import Epochs, pick_types, events_from_annotations
-from mne.channels import make_standard_montage
-from mne.io import concatenate_raws, read_raw_edf
-from mne.datasets import eegbci
-from mne.decoding import CSP
+from sklearn.svm import SVC
+from sklearn.model_selection import train_test_split
 import pickle
-
-# #############################################################################
-# # Set parameters and read data
 
 # Load our database of subjects
 study = "emotion"
@@ -21,48 +9,43 @@ source = open(study + "_epochs.pkl", "rb")
 epochs = pickle.load(source)
 source.close()
 
-# list our available videos
-all_vids = ["video_element_v11",
-            "video_element_v12",
-            "video_element_v13",
-            "video_element_v14",
-            "video_element_v15",
-            "video_element_v16",
-            "video_element_v17",
-            "video_element_v18",
-            "video_element_v19",
-            "video_element_v20",
-            "video_element_v21"]
+# list our available videos, assign them random valence scores from -1 to 1
+all_vids = {"video_element_v11": 1,
+            "video_element_v12": -1,
+            "video_element_v13": 0,
+            "video_element_v14": 1,
+            "video_element_v15": -1,
+            "video_element_v16": 0,
+            "video_element_v17": 1,
+            "video_element_v18": -1,
+            "video_element_v19": 0,
+            "video_element_v20": 1,
+            "video_element_v21": -1}
 
-# Choose any two videos (by index) to compare with the CSP/LDA combination (0-10)
-epochs = epochs[all_vids[0], all_vids[1]]  # choose two for our 2 class LDA classifier
-epochs_train = epochs[0:4]  # split half-and-half
-epochs_test = epochs[4:8]  # note: this should really be done randomly, I split manually here for simplicity
+# sliding window to increase our sample size from 12 per class
 
-labels = epochs_train.events[:, -1] - 15  # get labels into 0 or 1 format
 
-# Define a monte-carlo cross-validation generator (reduce variance):
-scores = []
-epochs_data = epochs_test.get_data()
-epochs_data_train = epochs_train.get_data()
-cv = ShuffleSplit(10, test_size=0.2, random_state=42)
-cv_split = cv.split(epochs_data_train)
+# create x and y lists. For classifiers, X contains all the data and Y contains labels. Each epoch (x[0]) needs a label
+X = epochs.get_data()
+Y = np.zeros((X.shape[0],))
+for i in range(X.shape[0]):  # for each epoch we have...
+    label = all_vids[list(epochs[i].event_id.keys())[0]]  # reference our dictionary above
+    Y[i] = label  # add label to the Y list
 
-# Assemble a classifier
-lda = LinearDiscriminantAnalysis()
-csp = CSP(n_components=4, reg=None, log=True, norm_trace=False)
+# make an SVM classifier with a linear kernel
+classifier = SVC(C=1, kernel='linear')
+# make our data 2D by collapsing all epochs into one
+X_2d = X.reshape(len(X), -1)
+X_2d = X_2d / np.std(X_2d)
+# train on 80%, test on 20%
+X_train, X_test, Y_train, Y_test = train_test_split(X_2d, Y, test_size=0.2, random_state=42)
+clf = SVC(kernel='linear', C=1).fit(X_train, Y_train)
+# print our average classification accuracy
+print(clf.score(X_test, Y_test))
 
-# Use scikit-learn Pipeline with cross_val_score function
-clf = Pipeline([('CSP', csp), ('LDA', lda)])
-scores = cross_val_score(clf, epochs_data_train, labels, cv=cv, n_jobs=None)
 
-# Printing the results
-class_balance = np.mean(labels == labels[0])
-class_balance = max(class_balance, 1. - class_balance)
-print("Classification accuracy: %f / Chance level: %f" % (np.mean(scores),
-                                                          class_balance))
-
-# plot CSP patterns estimated on full data for visualization
-csp.fit_transform(epochs_data, labels)
-
-csp.plot_patterns(epochs.info, ch_type='eeg', units='Patterns (AU)', size=1.5)
+"""  Test with a bunch of predictions
+for i in range(len(X_test)):
+    sample = X_test.copy()[i].reshape(1, -1)
+    print(clf.predict(sample))
+"""
