@@ -97,8 +97,13 @@ for subject in range(N):  # for each subject...
 epochs_combined = mne.concatenate_epochs(all_epochs)  # join all epochs into one object
 
 # save all raw data to a file for later
-data = open(study + ".pkl", "wb")
+data = open(study + "_raws.pkl", "wb")
 pickle.dump(all_raws, data)
+data.close()
+
+# save all epochs to a file for later
+data = open(study + "_epochs.pkl", "wb")
+pickle.dump(epochs_combined, data)
 data.close()
 
 if study == "emotion":
