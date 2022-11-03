@@ -91,12 +91,12 @@ def fixation_cross(screen, duration):
 # Begin actual video presentation:
 # Constants:
 black = (0, 0, 0)
-baseline_start = 1
-baseline_end = 2
-video_end = 3
+baseline_start = 32775
+baseline_end = 32776
+video_end = 800  # End_of_Trial
 vids = dict([
-    (4, "Data/v1.mp4"),
-    (5, "Data/v2.mp4")
+    (33025, "Data/v1.mp4"),  # Stim 1
+    (33026, "Data/v2.mp4")  # Stim 2
 ])
 
 keys = list(vids.keys())
@@ -106,7 +106,7 @@ pygame.init()
 pygame.display.init()
 for key in keys:
     name = vids[key]  # select the matching file
-    code = int(key)
+    code = key
     v = moviepy.editor.VideoFileClip(name)  # load video file
     v = v.resize(height=1080)  # resize to screen resolution for fullscreen video
     screen = pygame.display.set_mode(v.size, pygame.FULLSCREEN)  # create pygame display
