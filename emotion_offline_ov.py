@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-
 import moviepy.editor
 import numpy as np
 import random
 import pygame
+import pandas
 import socket
 import time
 
+ID = 0  # SET THE SUBJECT ID FIRST!
 
 def sendOVstim(ID, sock, t=None, f=4):
     # create the three pieces of the tag: [uint64 flags ; uint64 stimulation_identifier ; uint64 timestamp]
@@ -88,39 +89,125 @@ def fixation_cross(screen, duration):
     time.sleep(duration)
 
 
-# Begin actual video presentation:
+def blit_text(surface, text, pos, font, color):
+    words = [word.split(' ') for word in text.splitlines()]  # 2D array where each row is a list of words.
+    space = font.size(' ')[0]  # The width of a space.
+    max_width, max_height = surface.get_size()
+    x, y = pos
+    for line in words:
+        for word in line:
+            word_surface = font.render(word, 0, color)
+            word_width, word_height = word_surface.get_size()
+            if x + word_width >= max_width:
+                x = pos[0]  # Reset the x.
+                y += word_height  # Start on new row.
+            surface.blit(word_surface, (x, y))
+            x += word_width + space
+        x = pos[0]  # Reset the x.
+        y += word_height  # Start on new row.
+
+
+def wait(key, capture=False):
+    while True:
+        # gets a single event from the event queue
+        event = pygame.event.wait()
+        # captures the 'KEYDOWN'
+        if event.type == pygame.KEYDOWN:
+            # gets the key name
+            if key and pygame.key.name(event.key) == key:
+                if capture:
+                    return pygame.key.name(event.key)
+                return True
+            elif not key:  # if no key is specified, work anyway
+                if capture:
+                    return pygame.key.name(event.key)
+                return True
+
+
+def off_center(surface, xoff, yoff):
+    center = (surface.get_width() / 2, surface.get_height() / 2)
+    return center[0] + xoff, center[1] + yoff
+
+
 # Constants:
-black = (0, 0, 0)
+black = pygame.Color("black")
+white = pygame.Color("white")
 baseline_start = 32775
 baseline_end = 32776
 video_end = 800  # End_of_Trial
+ITI = 3  # inter-trial interval in seconds
 vids = dict([
     (33025, "Data/v1.mp4"),  # Stim 1
-    (33026, "Data/v2.mp4")  # Stim 2
+    (33026, "Data/v2.mp4"),  # Stim 2
+    (33027, "Data/v3.mp4"),  # Stim 3
+    (33028, "Data/v4.mp4"),  # Stim 4
+    (33029, "Data/v5.mov")   # Stim 5
 ])
 
 keys = list(vids.keys())
 random.shuffle(keys)  # randomize the display order
 
+# Responses:
+fill = np.zeros((2, len(keys)))
+results = pandas.DataFrame(data=fill.T, index=keys, columns=["Valence", "Arousal"])
+
+# setup all pygame variables
 pygame.init()
 pygame.display.init()
+screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)  # create pygame display
+center = (screen.get_width() // 2, screen.get_height() // 2)  # useful for later
+valence = pygame.image.load("Data/valence.png").convert()  # both our emotional scale values
+arousal = pygame.image.load("Data/arousal.png").convert()
+
+intro = "       In this task, you will watch a series of videos\n" \
+        "                 that evoke different emotions.\n\n" \
+        "             Each video will be preceded by a short\n" \
+        "      fixation cross (to relax) before the video starts.\n\n" \
+        "       Each video will be followed by two questions\n" \
+        "              about how the video made you feel.\n\n" \
+        "                Answer to the best of your ability!\n" \
+        "                 There will be 5 videos in total.\n\n" \
+        "                    Press any key to continue..."
+myfont = pygame.font.SysFont('Arial', 30)
+blit_text(screen, intro, off_center(screen, -300, -225), myfont, white)
+pygame.display.update()
+wait('')
+
 for key in keys:
     name = vids[key]  # select the matching file
     code = key
     v = moviepy.editor.VideoFileClip(name)  # load video file
     v = v.resize(height=1080)  # resize to screen resolution for fullscreen video
-    screen = pygame.display.set_mode(v.size, pygame.FULLSCREEN)  # create pygame display
 
     # display fixation cross (and notify OV)
     sendOVstim(baseline_start, out, None, 4)
-    fixation_cross(screen, 5)
+    fixation_cross(screen, 2)
     sendOVstim(baseline_end, out, None, 4)
 
     # start video (and notify OV)
     sendOVstim(key, out, None, 4)
     v.preview()
     sendOVstim(video_end, out, None, 4)
+
+    # present valence question
+    screen.fill(black)
+    screen.blit(valence, off_center(screen, -valence.get_width()/2, -valence.get_height()/2))
+    pygame.display.update()
+    results["Valence"][key] = (wait('', capture=True))
+
+    # present arousal question
+    screen.fill(black)
+    screen.blit(arousal, off_center(screen, -arousal.get_width()/2, -arousal.get_height()/2))
+    pygame.display.update()
+    results["Arousal"][key] = (wait('', capture=True))
+
+    # wait for ITI seconds before next video
+    screen.fill(black)
+    pygame.display.update()
+    time.sleep(ITI)
+
 pygame.quit()
 
 # signal end of experiment
 sendOVstim(32770, out, None, 4)  # send marker to OpenViBE (OVTK_StimulationId_ExperimentStop: 32770)
+results.to_csv("{}_offline.csv".format(ID))
