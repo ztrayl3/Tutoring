@@ -156,8 +156,8 @@ pygame.init()
 pygame.display.init()
 screen = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN)  # create pygame display
 center = (screen.get_width() // 2, screen.get_height() // 2)  # useful for later
-valence = pygame.image.load("Data/valence.png").convert()  # both our emotional scale values
-arousal = pygame.image.load("Data/arousal.png").convert()
+valence = pygame.image.load("../Data/valence.png").convert()  # both our emotional scale values
+arousal = pygame.image.load("../Data/arousal.png").convert()
 
 intro = "       In this task, you will watch a series of videos\n" \
         "                 that evoke different emotions.\n\n" \

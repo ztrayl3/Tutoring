@@ -35,8 +35,8 @@ for subject in range(N):  # for each subject...
     ########################
 
     # load EDF file
-    eeg_path = os.path.join("Data", study, 's' + str(subject+1) + ".edf")  # path to RENAMED edf files
-    eve_path = os.path.join("Data", study, 's' + str(subject+1) + ".csv")  # path to RENAMED (and edited if erp) csv files
+    eeg_path = os.path.join("../Data", study, 's' + str(subject + 1) + ".edf")  # path to RENAMED edf files
+    eve_path = os.path.join("../Data", study, 's' + str(subject + 1) + ".csv")  # path to RENAMED (and edited if erp) csv files
     raw = mne.io.read_raw_edf(eeg_path, preload=True)
 
     # load events as annotations from CSV file

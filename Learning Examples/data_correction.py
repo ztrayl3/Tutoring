@@ -2,19 +2,13 @@ import matplotlib
 import pandas
 import mne
 
+# leftover script for reference, in case we need to fix more EEG data later
 
 # read raw EEG file
-files = ["Data/emotion/raw_exp1.edf", "Data/emotion/raw_exp2.edf", "Data/emotion/raw_exp3.edf",
-         "Data/emotion/raw_exp4.edf", "Data/emotion/raw_exp5.edf", "Data/emotion/raw_exp6.edf"]
+files = ["../Data/emotion/raw_exp1.edf", "../Data/emotion/raw_exp2.edf", "../Data/emotion/raw_exp3.edf",
+         "../Data/emotion/raw_exp4.edf", "../Data/emotion/raw_exp5.edf", "../Data/emotion/raw_exp6.edf"]
 raws = []
 
-for eeg_path in files:
-    raw = mne.io.read_raw_edf(eeg_path, preload=True)
-    montage = mne.channels.make_standard_montage('standard_1020')  # load the standard 10-20
-    raw.set_montage(montage, on_missing="ignore")  # apply the channel montage
-    raws.append(raw)
-
-"""
 for eeg_path in files:
     raw = mne.io.read_raw_edf(eeg_path, preload=True)
 
@@ -131,43 +125,3 @@ for eeg_path in files:
     events, event_dict = mne.events_from_annotations(raw)
 
     raws.append(raw)
-"""
-
-# combine all raw files into one large one
-all_raws = mne.concatenate_raws(raws)
-events, event_dict = mne.events_from_annotations(all_raws)
-
-# Pre-Processing
-artifact_removal = all_raws.copy()
-artifact_removal.filter(l_freq=1.0, h_freq=None, n_jobs=-1)  # high-pass filter at 1Hz
-
-# ICA artifact removal
-ica = mne.preprocessing.ICA(n_components=0.95, random_state=97, max_iter="auto")
-ica.fit(artifact_removal)  # fit the ICA with EEG and EOG information
-
-# Visually inspect the data
-N = ica.n_components_
-ica.plot_properties(all_raws, picks=list(range(0, N)), psd_args={"fmin": 1.0, "fmax": 80.0})  # further analyze the channels
-matplotlib.pyplot.show(block=True)  # wait until all figures are closed
-
-# last chance to un-bad components...
-response = input("Type any bad components (0-{}) that should be marked for exclusion (seperated by spaces): ".format(N))
-ica.exclude = [int(x) for x in response.split(" ")]  # mark bad components for removal
-
-# See the changes we've made
-ica.plot_overlay(all_raws, exclude=ica.exclude, picks='eeg')
-matplotlib.pyplot.show(block=True)  # wait until all figures are closed
-
-ica.apply(all_raws)  # apply ICA to data, removing the artifacts
-
-want_epoch = True
-if want_epoch:
-    epochs = mne.Epochs(all_raws, events, event_id=event_dict, tmin=-0.2, tmax=30,
-                        preload=False, event_repeated="drop", reject=None, reject_by_annotation=None, proj=False)
-
-    relevant = ["OVTK_StimulationId_Label_00", "OVTK_StimulationId_Label_01",
-                "OVTK_StimulationId_Label_10", "OVTK_StimulationId_Label_11"]
-    for i in relevant:
-        epochs[i].compute_psd(method="welch", average='mean', picks=['eeg'], fmax=60).plot()
-
-#mne.export.export_raw("exp.vhdr", raw, fmt='brainvision', overwrite=True)
