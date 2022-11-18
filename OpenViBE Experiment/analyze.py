@@ -29,7 +29,7 @@ def sliding_window(window_size, step_size, epochs, end):
 files = ["../Data/emotion/raw_exp1.edf", "../Data/emotion/raw_exp2.edf", "../Data/emotion/raw_exp3.edf",
          "../Data/emotion/raw_exp4.edf", "../Data/emotion/raw_exp5.edf", "../Data/emotion/raw_exp6.edf"]
 raws = []
-output = "openvibe"  # either "sklearn" or "openvibe" to detail which classifier format we're using
+output = "sklearn"  # either "sklearn" or "openvibe" to detail which classifier format we're using
 
 for eeg_path in files:
     raw = mne.io.read_raw_edf(eeg_path, preload=True)
@@ -52,8 +52,8 @@ ica.fit(artifact_removal)  # fit the ICA with EEG and EOG information
 
 # Visually inspect the data
 N = ica.n_components_
-#ica.plot_properties(all_raws, picks=list(range(0, N)), psd_args={"fmin": 1.0, "fmax": 80.0})  # further analyze the channels
-#matplotlib.pyplot.show(block=True)  # wait until all figures are closed
+ica.plot_properties(all_raws, picks=list(range(0, N)), psd_args={"fmin": 1.0, "fmax": 80.0})  # further analyze the channels
+matplotlib.pyplot.show(block=True)  # wait until all figures are closed
 
 # last chance to un-bad components...
 response = input("Type any bad components (0-{}) that should be marked for exclusion (seperated by spaces): ".format(N))
@@ -127,10 +127,10 @@ if output == "sklearn":
             data = np.concatenate((data[0], data[1]))
             labels = np.array(sum(labels, []))  # join the data and labels each into one object
 
-        data_2d = data.reshape(len(data), -1)
-        data_2d = data_2d / np.std(data_2d)
-        clf = SVC(C=1, kernel='linear')
-        scores = cross_val_score(clf, data_2d, labels, cv=cv, n_jobs=-1)
+            data_2d = data.reshape(len(data), -1)
+            data_2d = data_2d / np.std(data_2d)
+            clf = SVC(C=1, kernel='linear')
+            scores = cross_val_score(clf, data_2d, labels, cv=cv, n_jobs=-1)
 
         # Printing the results (with some space so we can find them later)
         print("\n\nClassification score: %s (std. %s)\n\n" % (np.mean(scores), np.std(scores)))
