@@ -273,7 +273,7 @@
 					<TypeIdentifier>(0x5261636b, 0x45535449)</TypeIdentifier>
 					<Name>Estimator</Name>
 					<DefaultValue>Covariance</DefaultValue>
-					<Value>Ledoit and Wolf</Value>
+					<Value>Covariance</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -343,7 +343,7 @@
 					<TypeIdentifier>(0x5261636b, 0x45535449)</TypeIdentifier>
 					<Name>Estimator</Name>
 					<DefaultValue>Covariance</DefaultValue>
-					<Value>Ledoit and Wolf</Value>
+					<Value>Covariance</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -413,7 +413,7 @@
 					<TypeIdentifier>(0x5261636b, 0x45535449)</TypeIdentifier>
 					<Name>Estimator</Name>
 					<DefaultValue>Covariance</DefaultValue>
-					<Value>Ledoit and Wolf</Value>
+					<Value>Covariance</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -483,7 +483,7 @@
 					<TypeIdentifier>(0x5261636b, 0x45535449)</TypeIdentifier>
 					<Name>Estimator</Name>
 					<DefaultValue>Covariance</DefaultValue>
-					<Value>Ledoit and Wolf</Value>
+					<Value>Covariance</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -962,7 +962,7 @@
 					<TypeIdentifier>(0x54bb0016, 0x6aa27496)</TypeIdentifier>
 					<Name>Kernel type</Name>
 					<DefaultValue>Linear</DefaultValue>
-					<Value>Polinomial</Value>
+					<Value>Linear</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
@@ -1166,7 +1166,7 @@
 					<TypeIdentifier>(0x54bb0016, 0x6aa27496)</TypeIdentifier>
 					<Name>Kernel type</Name>
 					<DefaultValue>Linear</DefaultValue>
-					<Value>Polinomial</Value>
+					<Value>Linear</Value>
 					<Modifiability>false</Modifiability>
 				</Setting>
 				<Setting>
