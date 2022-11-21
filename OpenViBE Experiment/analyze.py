@@ -29,7 +29,7 @@ def sliding_window(window_size, step_size, epochs, end):
 files = ["../Data/emotion/raw_exp1.edf", "../Data/emotion/raw_exp2.edf", "../Data/emotion/raw_exp3.edf",
          "../Data/emotion/raw_exp4.edf", "../Data/emotion/raw_exp5.edf", "../Data/emotion/raw_exp6.edf"]
 raws = []
-output = "sklearn"  # either "sklearn" or "openvibe" to detail which classifier format we're using
+output = "openvibe"  # either "sklearn" or "openvibe" to detail which classifier format we're using
 
 for eeg_path in files:
     raw = mne.io.read_raw_edf(eeg_path, preload=True)
@@ -136,7 +136,25 @@ if output == "sklearn":
         print("\n\nClassification score: %s (std. %s)\n\n" % (np.mean(scores), np.std(scores)))
 
 elif output == "openvibe":
-    mne.export.export_raw("exp.vhdr", all_raws, fmt='brainvision', overwrite=True)
+    mapping = {'OVTK_GDF_End_Of_Trial': 800,
+               'OVTK_StimulationId_BaselineStart': 32775,
+               'OVTK_StimulationId_BaselineStop': 32776,
+               'OVTK_StimulationId_ExperimentStart': 32769,
+               'OVTK_StimulationId_ExperimentStop': 32770,
+               'OVTK_StimulationId_Label_00': 33024,
+               'OVTK_StimulationId_Label_01': 33025,
+               'OVTK_StimulationId_Label_10': 33040,
+               'OVTK_StimulationId_Label_11': 33041,
+               'BAD boundary': 33538,  # mark these as artifacts
+               'EDGE boundary': 33538}
+
+    temp = []
+    for description in all_raws.annotations.description:
+        temp.append(mapping[description])  # convert each description to an integer
+    all_raws.annotations.description = np.array(["Stimulus/S " + str(i) for i in temp])  # convert to "Stimulus/S ####"
+    # Brainvision requires "stimulus" to be in integer form, not string, so openvibe needs the same!
+
+    mne.export.export_raw("../Data/emotion/exp.vhdr", all_raws, fmt='brainvision', overwrite=True)
 
 else:
     print("Incorrect output option")
